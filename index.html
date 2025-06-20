@@ -319,19 +319,14 @@
               </a>
             </div>
             <div class="title">
-              <h3>
-                الأسعار تقاس حسب <span>نوع التصميم</span> و حسب
-                <span class="extra">الأمتار</span>
-              </h3>
+<h3>
+  نوفر لك السعر المناسب حسب <span class="highlight">نوع التصميم</span> و
+  <span class="highlight">عدد الأمتار</span>
+</h3>
             </div>
           </div>
         </div>
 <script>
-  function toggleImage(img) {
-    img.classList.toggle("clicked");
-    let body = document.querySelector("body");
-    body.classList.toggle("no-scroll");
-  }
 </script>
     
     <!-- Google Tag Manager -->
@@ -346,22 +341,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2M3ZQG"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<footer style="width: 100%; background-color: #000; color: #fff; text-align: center; padding: 20px 10px; font-size: 16px;">
+<footer class="footer-credit">
   صُنع بكل حب من 
-  <a href="https://dwal.sa" target="_blank" style="color: #fff; font-weight: bold; text-decoration: underline;">
-    دوال للتسويق
-  </a>
-  <span style="display:inline-block; color:#e25555; animation: heartbeat 1s infinite ease-in-out;">❤</span>
+  <a href="https://dwal.sa" target="_blank">دوال للتسويق</a>
+  <span class="heart">❤</span>
 </footer>
-
 <style>
-@keyframes heartbeat {
-  0%   { transform: scale(1); }
-  14%  { transform: scale(1.3); }
-  28%  { transform: scale(1); }
-  42%  { transform: scale(1.3); }
-  70%  { transform: scale(1); }
+.footer-credit {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
 }
-</style>
-  </body>
+
+.footer-credit a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer-credit .heart {
+  display: inline-block;
+  animation: heartbeat 1s infinite ease-in-out;
+  color: #e25555;
+}
+</style><!-- باقي الصفحة... -->
+
+<script>
+  function toggleImage(img) {
+    img.classList.toggle("clicked");
+    let body = document.querySelector("body");
+    body.classList.toggle("no-scroll");
+  }
+</script>
+
+</body>
 </html>
